@@ -435,7 +435,7 @@ class Selenium2Driver extends CoreDriver
         $this->getWebDriverSession()->focusWindow($name ?: '');
     }
 
-    public function switchToIFrame(?string $name = null)
+    public function switchToIFrame(string|int|null $name = null)
     {
         $this->getWebDriverSession()->frame(array('id' => $name));
     }
